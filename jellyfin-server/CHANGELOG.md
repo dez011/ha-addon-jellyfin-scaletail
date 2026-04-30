@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2.1](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.2.0...v2.2.1) (2026-04-30)
+
+
+### Features
+
+* add optional ScaleTail DNS override and DNS server configuration
+* add optional ScaleTail `accept-dns` setting for MagicDNS usage
+
+## [2.2.0](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.1.0...v2.2.0) (2026-04-30)
+
+
+### Features
+
+* add optional ScaleTail/Tailscale Serve support for non-host add-on
+* add add-on options for ScaleTail enable flag, hostname, and auth key
+* switch image base to linuxserver/jellyfin and include tailscale binaries
+
 ## [2.1.0](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.0.8...v2.1.0) (2026-04-06)
 
 

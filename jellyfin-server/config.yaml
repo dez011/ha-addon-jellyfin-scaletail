@@ -1,5 +1,5 @@
 name: Jellyfin Server
-version: 2.1.0
+version: 2.2.0.1
 slug: jellyfinserver
 description: Jellyfin Server add-on
 url: https://github.com/mdvorak/ha-addon-jellyfin
@@ -20,4 +20,18 @@ ports:
 ports_description:
   8096/tcp: Jellyfin web and media port
   8920/tcp: Jellyfin TLS port, must be configured in the server first
+options:
+  scaletail_enabled: false
+  scaletail_hostname: st-jellyfin
+  scaletail_auth_key: ""
+  scaletail_enable_dns: false
+  scaletail_dns_server: 9.9.9.9
+  scaletail_accept_dns: false
+schema:
+  scaletail_enabled: bool
+  scaletail_hostname: str
+  scaletail_auth_key: password
+  scaletail_enable_dns: bool
+  scaletail_dns_server: str
+  scaletail_accept_dns: bool
 image: ghcr.io/mdvorak/jellyfin-server
